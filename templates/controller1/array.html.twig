@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Array{% endblock %}
+
+{% block body %}
+<ul>
+    {% for value in arrNom %}
+    <li>{{value}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

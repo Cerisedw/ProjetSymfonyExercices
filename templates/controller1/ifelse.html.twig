@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}If Else{% endblock %}
+
+{% block body %}
+    {% if h < 12 %}
+        <h2>Bonjour</h2>
+    {% elseif h >= 12 and h < 18 %}
+        <h2>Bonne après-midi</h2>
+    {% elseif h >= 18 and h < 21 %}
+        <h2>Bonne soirée</h2>
+    {% else %}
+        <h2>Bonne nuit</h2>
+    {% endif %}
+{% endblock %}
